@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd"><tmx version="1.4"><header creationtool="systran-corpus-manager" creationtoolversion="1.0" segtype="sentence" o-tmf="" adminlang="en_US" srclang="en" datatype="unknown"/><body><tu><tuv xml:lang="en"><seg>this is a test</seg></tuv><tuv xml:lang="fr"><seg>ceci est un test</seg></tuv></tu><tu><tuv xml:lang="en"><seg>this is the second test</seg></tuv><tuv xml:lang="fr"><seg>ceci est seconde test</seg></tuv></tu></body></tmx>

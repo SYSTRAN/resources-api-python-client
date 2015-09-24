@@ -1,0 +1,4 @@
+#TM
+#EN	FR
+this is a test	ceci est un test
+this is the second test	ceci est seconde test
