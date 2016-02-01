@@ -45,6 +45,7 @@ class DictionaryApiTests(unittest.TestCase):
         dict_add_input.name = "testPythonClient"
         dict_add_input.source_lang = "en"
         dict_add_input.target_langs = "fr"
+        dict_add_input.type = "UD"
         dict_add_input.comments = "This is a dictionary created for client java test"
 
         dict_add_body = systranResourcesApi.DictionaryAddBody()
