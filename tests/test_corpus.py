@@ -4,15 +4,15 @@
 import os
 import unittest
 
-import systranResourcesApi
-import systranResourcesApi.configuration
+import systran_resources_api
+import systran_resources_api.configuration
 
 class CorpusApiTests(unittest.TestCase):
     def setUp(self):
         api_key_file = os.path.join(os.path.dirname(__file__), "../", "api_key.txt")
-        systranResourcesApi.configuration.load_api_key(api_key_file)
-        self.api_client = systranResourcesApi.ApiClient()
-        self.corpus_api = systranResourcesApi.CorpusApi(self.api_client)
+        systran_resources_api.configuration.load_api_key(api_key_file)
+        self.api_client = systran_resources_api.ApiClient()
+        self.corpus_api = systran_resources_api.CorpusApi(self.api_client)
 
     def test_resources_corpus_list_get(self):
         result = self.corpus_api.resources_corpus_list_get()
@@ -112,18 +112,18 @@ class CorpusApiTests(unittest.TestCase):
         # print result.__repr__()
 
     def test_resources_corpus_segment_add_post(self):
-        segment_target = systranResourcesApi.CorpusAddSegmentTarget()
+        segment_target = systran_resources_api.CorpusAddSegmentTarget()
         segment_target.lang = "fr"
         segment_target.target = "Ceci est une belle maison"
         list_segment_targets = [segment_target]
 
-        corpus_add_segment = systranResourcesApi.CorpusAddSegment()
+        corpus_add_segment = systran_resources_api.CorpusAddSegment()
         corpus_add_segment.lang = "en"
         corpus_add_segment.source = "This is a beautiful house"
         corpus_add_segment.targets = list_segment_targets
         list_corpus_add_segments = [corpus_add_segment]
 
-        corpus_segment_add_request = systranResourcesApi.CorpusSegmentAddRequest()
+        corpus_segment_add_request = systran_resources_api.CorpusSegmentAddRequest()
         corpus_segment_add_request.corpus_id = "55b62288158ad061c6aaa509"
         corpus_segment_add_request.segments = list_corpus_add_segments
 
