@@ -32,7 +32,7 @@ REQUIRES = ["urllib3 >= 1.10", "six >= 1.9", "certifi"]
 
 setup(
     name="resources-api-python-client",
-    version="1.0.1",
+    version="1.0.2",
     description="Rest Resource API",
     author_email="",
     url="",
