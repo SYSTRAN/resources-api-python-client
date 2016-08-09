@@ -35,7 +35,7 @@ class LookupMatchObject(object):
             'auto_complete': 'bool',
             'model_name': 'str',
             'source': 'LookupSourceObject',
-            'target': 'LookupTargetObject',
+            'targets': 'list[LookupTargetObject]',
             'other_expressions': 'list[LookupOtherExpression]'
         }
 
@@ -43,7 +43,7 @@ class LookupMatchObject(object):
             'auto_complete': 'auto_complete',
             'model_name': 'model_name',
             'source': 'source',
-            'target': 'target',
+            'targets': 'targets',
             'other_expressions': 'other_expressions'
         }
         
@@ -57,7 +57,7 @@ class LookupMatchObject(object):
         self.source = None  # LookupSourceObject
         
         
-        self.target = None  # LookupTargetObject
+        self.targets = None  # list[LookupTargetObject]
         
         
         self.other_expressions = None  # list[LookupOtherExpression]
